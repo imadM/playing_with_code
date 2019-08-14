@@ -9,7 +9,18 @@
 <body>
 
 
-  <img  src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/NjSI3jJ.jpg/270px-NjSI3jJ.jpg" alt="cat">
+  <img id="my-elem"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/NjSI3jJ.jpg/270px-NjSI3jJ.jpg" alt="cat">
+
+<script type="text/javascript">
+    var elem = document.getElementById('my-elem');
+    elem.addEventListener('click', function(){
+      //the element has been clicked... do stuff here
+        let counter=0;
+        counter++;
+        return counter;
+    }, false);
+
+  </script>
 
 </body>
 </html>
