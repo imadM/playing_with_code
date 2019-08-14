@@ -13,14 +13,19 @@
 
 <script type="text/javascript">
     var elem = document.getElementById('my-elem');
-    elem.addEventListener('click', function(){
+    let counter=0;
+     elem.addEventListener('click', function(){
       //the element has been clicked... do stuff here
-        let counter=0;
-        counter++;
-        return counter;
-    }, false);
+      counter++;
+      console.log(counter);
+
+
+        }, false);
+
+
 
   </script>
+
 
 </body>
 </html>
