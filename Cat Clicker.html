@@ -9,22 +9,38 @@
 <body>
 
 
-  <img id="my-elem"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/NjSI3jJ.jpg/270px-NjSI3jJ.jpg" alt="cat">
+  <figure>
+    <img id="my-elem"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/NjSI3jJ.jpg/270px-NjSI3jJ.jpg" alt="cat">
+    <figcaption>Cat.1.<i id="i1"></i></figcaption>
+  </figure>
+<div id="tt">
 
-<script type="text/javascript">
-    var elem = document.getElementById('my-elem');
-    let counter=0;
-     elem.addEventListener('click', function(){
-      //the element has been clicked... do stuff here
-      counter++;
-      console.log(counter);
-
-
-        }, false);
-
+</div>
+  <figure>
+    <img id="my-elem2" width="300px"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Cat_Briciola_with_pretty_and_different_colour_of_eyes.jpg/420px-Cat_Briciola_with_pretty_and_different_colour_of_eyes.jpg" alt="cat2">
+    <figcaption>Cat.2.<i id="i2"></i></figcaption>
+  </figure>
 
 
-  </script>
+  <script type="text/javascript">
+      var elem = document.getElementById('my-elem');
+      var counter_1=0;
+       elem.addEventListener('click', function(){
+        counter_1+=1;
+        console.log(counter_1);
+          }, false);
+          document.getElementById("tt").innerHTML = counter_1;
+
+
+  // cat2
+      var elem2 = document.getElementById('my-elem2');
+      var counter_2=0;
+        elem2.addEventListener('click', function(){
+           counter_2++;
+           console.log(counter_2);
+             }, false);
+
+    </script>
 
 
 </body>
